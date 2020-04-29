@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-
 public class MessageService {
 
 	
@@ -38,15 +37,6 @@ public class MessageService {
 	public String soft_jenkins() {
 
 		return "Hello jenkins Users!!!";
-
-	}
-
-
-	@GetMapping("/error")
-
-	public String soft_error() {
-
-		return "Oops, Sorry Something went wrong";
 
 	}
 
