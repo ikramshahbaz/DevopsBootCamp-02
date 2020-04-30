@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-public class MessageService {
+public class MessageService{
 
 	
 	@GetMapping("/git")
@@ -39,5 +39,6 @@ public class MessageService {
 		return "Hello jenkins Users!!!";
 
 	}
+	
 
 }
