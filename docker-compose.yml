@@ -1,11 +1,13 @@
 version: '3'
-
 services:
-  app:
-    build: .
-    image: test-img
+  web:
+    image: nginx
+  db:
+    image: mysql
     ports:
-      - 8080:8080
-  
-  operatingsystem:
-     image: ubuntu
+    - "3306:3306"
+    environment:
+    - MYSQL_ROOT_PASSWORD=password
+    - MYSQL_USER=user
+    - MYSQL_PASSWORD=password
+    - MYSQL_DATABASE=demodb
